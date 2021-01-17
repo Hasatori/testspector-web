@@ -48,7 +48,7 @@ body {
   Link
 **/
 a {
-  color: #4285f4;
+  color: #737EE6;
   text-decoration: none;
   word-wrap: break-word;
   cursor: pointer;
@@ -242,7 +242,7 @@ a:hover {
 }
 
 .footer {
-  background-color: #4285f4 !important;
+  background-color: #737EE6 !important;
 }
 
 /*# sourceMappingURL=Footer.css.map */

@@ -23,7 +23,7 @@ import i18next from "i18next";
 import {getLanguageFlagPairFromLocale} from "../../i18n/I18nConfig";
 import hamburger from "../../assets/images/common/hamburger-icon.png"
 import close from "../../assets/images/common/close-icon.png"
-
+import logo from "../../assets/images/logos/logo.svg"
 function AppHeader(props: AppProps) {
     const [open, setOpen] = useState(false);
     const {t,i18n} = useTranslation();
@@ -35,12 +35,13 @@ function AppHeader(props: AppProps) {
         <header className="app-header z-depth-1">
 
             <MDBNavbar fixed="top" style={bgPink} expand="lg">
-                <MDBContainer>
-                    <MDBNavbarBrand href="/">
-                        Full stack template
+                <MDBContainer fluid={true}>
+                    <MDBNavbarBrand href="/" >
+                        <img width={40} src={logo}></img>
+                        Testspector
                     </MDBNavbarBrand>
-                    <MDBNavbarToggler
 
+                    <MDBNavbarToggler
                         image={open ? close : hamburger}
                         onClick={() => {
                             setOpen(!open)
@@ -48,7 +49,7 @@ function AppHeader(props: AppProps) {
                     <MDBCollapse isOpen={open} navbar>
                         <MDBNavbarNav left>
                             <MDBNavItem active={location.pathname === '/'}>
-                                <MDBNavLink to="/" link>{t('ns1:homeLabel')}</MDBNavLink>
+                                <MDBNavLink to="/" link>{t('ns1:aboutAppLabel')}</MDBNavLink>
                             </MDBNavItem>
                         </MDBNavbarNav>
                         <MDBNavbarNav right>
@@ -117,7 +118,8 @@ function AppHeader(props: AppProps) {
                                 </MDBDropdown></MDBNavItem>
                         </MDBNavbarNav>
                     </MDBCollapse>
-                </MDBContainer>
+                    </MDBContainer>
+
             </MDBNavbar>
         </header>
     )

@@ -48,7 +48,7 @@ body {
   Link
 **/
 a {
-  color: #4285f4;
+  color: #737EE6;
   text-decoration: none;
   word-wrap: break-word;
   cursor: pointer;
@@ -248,7 +248,7 @@ a:hover {
 }
 
 .navbar {
-  border-bottom: 2px solid #4285f4 !important;
+  border-bottom: 2px solid #737EE6 !important;
 }
 
 .active {
