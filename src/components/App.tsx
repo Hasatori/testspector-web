@@ -149,14 +149,6 @@ function App(appProps: AppProps) {
             toast.dismiss();
         }
     }, [appProps.loading])
-/*    useEffect(() => {
-        if (process.env.REACT_APP_HTTPS && window.location.protocol == 'http:') {
-
-            window.location.href =
-                window.location.href.replace(
-                    'http:', 'https:');
-        }
-    }, [])*/
     return (
 
         <div className="app">
